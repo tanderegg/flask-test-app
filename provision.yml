@@ -1,8 +1,8 @@
 ---
-hosts: all
-tasks:
-  - name: Create virtualenv
-    shell: virtualenv env
+- hosts: all
+  tasks:
+    - name: Create virtualenv
+      shell: virtualenv env
 
-  - name: Install requirements
-    shell: env/bin/python -m pip install -r requirements.txt
+    - name: Install requirements
+      shell: env/bin/python -m pip install -r requirements.txt
